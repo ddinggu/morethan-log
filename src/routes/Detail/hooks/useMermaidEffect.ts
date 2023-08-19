@@ -11,14 +11,16 @@ const useMermaidEffect = () => {
       document.getElementsByClassName("language-mermaid")
     if (!elements) return
 
+    async function drawMarmaid(idx: number, element: Element) {
+      const id = "mermaid" + idx;
+      const definition = element.textContent || "";
+
+      const { svg } = await mermaid.render(id, definition);
+      element.innerHTML = svg;
+    }
+
     for (let i = 0; i < elements.length; i++) {
-      mermaid.render(
-        "mermaid" + i,
-        elements[i].textContent || "",
-        (svgCode: string) => {
-          elements[i].innerHTML = svgCode
-        }
-      )
+      drawMarmaid(i, elements[i]);
     }
   }, [])
 
