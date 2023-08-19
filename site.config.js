@@ -6,13 +6,13 @@ const CONFIG = {
     role: "클라우드 엔지니어",
     bio: "I develop everything using node.",
     email: "officerudwls@gmail.com",
-    linkedin: "",
+    linkedin: "경진-조-b82907220",
     github: "ddinggu",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
+      name: `블로그 repo`,
       href: "https://github.com/ddinggu/morethan-log",
     },
   ],
@@ -49,7 +49,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO,
+      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
