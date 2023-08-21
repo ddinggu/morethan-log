@@ -6,7 +6,7 @@ const CONFIG = {
     role: "Cloud Engineer",
     bio: "쿠버네티스 엔지니어를 꿈꾸고 있습니다.",
     email: "officerudwls@gmail.com",
-    linkedin: "경진-조-b82907220",
+    linkedin: "ddinggu",
     github: "ddinggu",
     instagram: "",
   },
